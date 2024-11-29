@@ -1,0 +1,29 @@
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 10px; /* Spacing between cells */
+    width: 300px; /* Fixed width */
+    height: 300px; /* Fixed height */
+    background-color: #26c6da; /* Turquoise background */
+    border: 5px solid #0097a7; /* Grid border color */
+    margin: auto; /* Center align */
+    border-radius: 8px; /* Optional: Rounded corners */
+  }
+  
+  .cell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem; /* Adjust size of text */
+    font-weight: bold;
+    cursor: pointer;
+    background-color: #e0f7fa; /* Light turquoise cell color */
+    border: 1px solid #0097a7; /* Cell borders */
+    transition: background-color 0.3s; /* Smooth hover effect */
+  }
+  
+  .cell:hover {
+    background-color: #b2ebf2; /* Slightly darker turquoise on hover */
+  }
+  
